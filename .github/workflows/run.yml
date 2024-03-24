@@ -1,8 +1,8 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: make say-hello
+      - uses: actions/checkout@v3
+      - run: echo "Hello, World!"
